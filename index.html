@@ -1,44 +1,22 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
-<title>PATNAL LAPAS BAUBAU</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PATNAL LAPAS BAUBAU</title>
 
-<style>
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow: hidden;
-}
-
-#appFrame {
-  border: 0;
-  width: 100vw;
-  height: 100dvh; /* menggunakan satuan dynamic viewport height */
-}
-</style>
+  <!-- CSS eksternal -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<iframe
-  id="appFrame"
-  src="https://script.google.com/macros/s/AKfycbyhtkn2gjYEKNVFfneaObV8il26T_qF9A3f_nHIvXmjhevVtbM7uv8-41De5h3rngSVtw/exec"
-  allow="camera; microphone; fullscreen; autoplay"
-  allowfullscreen>
-</iframe>
+  <iframe
+    id="uploadFrame"
+    src="https://script.google.com/macros/s/AKfycbyhtkn2gjYEKNVFfneaObV8il26T_qF9A3f_nHIvXmjhevVtbM7uv8-41De5h3rngSVtw/exec"
+    scrolling="no">
+  </iframe>
 
-<script>
-function aturTinggiSebenarnya() {
-  document.getElementById("appFrame").style.height =
-    window.innerHeight + "px";
-}
-window.addEventListener("resize", aturTinggiSebenarnya);
-aturTinggiSebenarnya();
-</script>
-
+  <!-- JS eksternal -->
+  <script src="script.js"></script>
 </body>
 </html>
